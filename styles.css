@@ -281,3 +281,6 @@ details p { margin: 0 0 16px; color: var(--muted); }
 .grupo-wa:hover { filter: brightness(1.05); transform: translateY(-1px); }
 .grupo-wa b { font-weight: 600; }
 .l-hero .grupo-wa { margin: 18px 0 0; font-size: .95rem; }
+
+/* Botón de material descargable */
+.btn.material { display: block; text-align: center; margin-top: 16px; }

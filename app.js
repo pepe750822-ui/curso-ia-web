@@ -124,6 +124,8 @@ async function paginaClase() {
 
   document.getElementById("resumen").textContent = c.resumen || "";
   document.getElementById("pasos").innerHTML = (c.pasos || []).map(p => `<li>${esc(p)}</li>`).join("");
+  const material = document.getElementById("material");
+  if (c.material) { material.href = c.material; material.hidden = false; }
 
   const check = document.getElementById("vista");
   check.checked = vistas().includes(c.id);

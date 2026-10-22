@@ -21,6 +21,7 @@
           "resumen": "Te muestro la web de reservas terminada y la desarmamos en partes: página, reserva, base de datos, panel. Así sabes a dónde vamos antes de empezar.",
           "youtube": "https://youtu.be/sNm6usv0iCE",
           "duracion": "12:17",
+          "material": "material/clase-1-1.pdf",
           "pasos": [
             "Mirar la web de ejemplo funcionando",
             "Elegir el negocio para el que vas a hacer tu web"
@@ -32,6 +33,7 @@
           "resumen": "Le contamos a la IA cómo funciona el negocio y armamos juntos el recorrido del cliente: botón Reservar, calendario, formulario, confirmación y pago. Usamos DeepSeek, que es gratis desde el navegador.",
           "youtube": "",
           "duracion": "",
+          "material": "material/clase-1-2.pdf",
           "pasos": [
             "Crear tu cuenta gratis en chat.deepseek.com",
             "Describir tu negocio en un mensaje",
@@ -51,6 +53,7 @@
           "resumen": "Con el flujo listo, le pedimos a DeepSeek la página principal y la abrimos en el navegador para verla funcionando.",
           "youtube": "",
           "duracion": "",
+          "material": "material/clase-2-1.pdf",
           "pasos": [
             "Pegar el flujo y pedir la landing",
             "Guardar el código como index.html y abrirlo en el navegador"
