@@ -1,7 +1,8 @@
 {
   "curso": {
     "titulo": "De la idea a tu web con IA",
-    "promesa": "De cero a tu web con reservas y base de datos, publicada y funcionando, usando IA. Sin saber programar.",
+    "marca": "CyberEdu MX",
+    "promesa": "De cero a tu propia página web con reservas y base de datos, publicada y funcionando. Clases en video, paso a paso, usando solo herramientas gratis.",
     "autor": "José",
     "youtube_canal": "",
     "contacto_whatsapp": "",
@@ -16,7 +17,7 @@
         {
           "id": "1-1",
           "titulo": "Qué vamos a construir y por qué",
-          "resumen": "Te muestro la web del quincho terminada y la desarmamos en partes: página, reserva, base de datos, panel. Así sabés a dónde vamos antes de empezar.",
+          "resumen": "Te muestro la web de reservas terminada y la desarmamos en partes: página, reserva, base de datos, panel. Así sabes a dónde vamos antes de empezar.",
           "youtube": "",
           "duracion": "",
           "pasos": [

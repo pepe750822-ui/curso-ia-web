@@ -1,41 +1,183 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-MX">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>De la idea a tu web con IA</title>
-  <meta name="description" content="Curso paso a paso: IA gratis (DeepSeek y OpenCode), GitHub, Vercel y Supabase con un proyecto real.">
+  <meta name="description" content="Curso paso a paso para crear tu propia página web con inteligencia artificial gratis: DeepSeek, OpenCode, GitHub, Vercel y Supabase. Sin saber programar.">
+  <meta property="og:title" content="De la idea a tu web con IA">
+  <meta property="og:description" content="Crea tu página web con IA gratis, aunque nunca hayas programado. Clases en video, paso a paso.">
+  <meta property="og:image" content="img/proyecto-web.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-pagina="inicio">
-  <div class="top">
+<body data-pagina="inicio" class="landing">
+  <div class="top top-dark">
     <div class="wrap">
-      <a class="logo" href="./">Curso IA</a>
-      <nav><a href="#modulos">Clases</a></nav>
+      <a class="logo" href="./" id="marca">CyberEdu MX</a>
+      <nav>
+        <a href="#proyecto">El proyecto</a>
+        <a href="#temario">Temario</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
     </div>
   </div>
 
   <main>
-    <section class="hero">
-      <div class="wrap">
-        <h1 id="titulo">De la idea a tu web con IA</h1>
-        <p id="promesa"></p>
-        <div class="btns">
-          <a class="btn" id="empezar" href="#modulos">Empezar</a>
-          <a class="btn ghost" id="ejemplo" href="#" target="_blank" rel="noopener">Ver el proyecto terminado</a>
+    <!-- Portada -->
+    <section class="l-hero">
+      <div class="glow g1"></div><div class="glow g2"></div>
+      <div class="wrap l-hero-grid">
+        <div class="l-hero-txt">
+          <p class="chip">🇲🇽 Curso en video · 100% con herramientas gratis</p>
+          <h1 id="titulo">Crea tu página web con <span class="grad">inteligencia artificial</span>, aunque nunca hayas programado</h1>
+          <p class="lead" id="promesa"></p>
+          <div class="btns">
+            <a class="btn btn-lg" id="empezar" href="#temario">Empezar gratis</a>
+            <a class="btn btn-lg ghost-light" href="#proyecto">Ver qué vas a construir</a>
+          </div>
+          <div class="progreso">
+            <span id="progreso-texto"></span>
+            <div class="barra"><span id="progreso-barra"></span></div>
+          </div>
         </div>
-        <div class="progreso">
-          <span id="progreso-texto"></span>
-          <div class="barra"><span id="progreso-barra"></span></div>
+        <div class="l-hero-vis" aria-hidden="true">
+          <div class="laptop">
+            <div class="laptop-bar"><i></i><i></i><i></i><span>tu-negocio.vercel.app</span></div>
+            <img src="img/proyecto-web.webp" alt="" width="1400" height="875">
+          </div>
+          <div class="phone"><img src="img/proyecto-movil.webp" alt="" width="520" height="1125"></div>
+          <div class="float f1">✅ Reserva guardada</div>
+          <div class="float f2">🚀 Publicado en Vercel</div>
         </div>
       </div>
     </section>
 
-    <section class="modulos">
-      <div class="wrap" id="modulos"></div>
+    <!-- Herramientas -->
+    <section class="l-tools">
+      <div class="wrap">
+        <p class="kicker center">Las herramientas que vas a dominar, todas con plan gratis</p>
+        <ul class="tools">
+          <li><span class="ico" style="--i:url(img/logos/deepseek.svg)"></span>DeepSeek</li>
+          <li><span class="ico" style="--i:url(img/logos/opencode.svg)"></span>OpenCode</li>
+          <li><span class="ico" style="--i:url(img/logos/github.svg)"></span>GitHub</li>
+          <li><span class="ico" style="--i:url(img/logos/vercel.svg)"></span>Vercel</li>
+          <li><span class="ico" style="--i:url(img/logos/supabase.svg)"></span>Supabase</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="l-sec">
+      <div class="wrap">
+        <p class="kicker">Lo que vas a lograr</p>
+        <h2 class="l-h2">Al terminar tienes una web real, en internet, que es tuya</h2>
+        <div class="cards4">
+          <article class="card"><span class="emoji">🤖</span><h3>Usar la IA a tu favor</h3><p>Aprendes a pedirle a la IA lo que necesitas y a corregirla cuando se equivoca.</p></article>
+          <article class="card"><span class="emoji">🌐</span><h3>Tu web publicada</h3><p>Con dirección propia, que puedes compartir por WhatsApp o redes desde el primer día.</p></article>
+          <article class="card"><span class="emoji">📅</span><h3>Reservas y clientes</h3><p>Un formulario que guarda cada reserva en tu base de datos, sin que tú hagas nada.</p></article>
+          <article class="card"><span class="emoji">💼</span><h3>Una habilidad que se cobra</h3><p>Lo que aprendes lo puedes ofrecer como servicio a negocios de tu ciudad.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyecto real -->
+    <section class="l-sec l-dark" id="proyecto">
+      <div class="wrap">
+        <p class="kicker">Un proyecto real, no un ejemplo de juguete</p>
+        <h2 class="l-h2">Construimos juntos la web de reservas de un negocio de verdad</h2>
+        <p class="l-sub">Un salón de eventos con alberca e hidromasaje en Córdoba, Argentina, que necesitaba recibir reservas en línea. Lo hicimos de cero con IA y lo grabé clase por clase, con todos los tropiezos incluidos.</p>
+        <div class="showcase">
+          <figure class="shot big">
+            <img src="img/proyecto-web.webp" alt="Portada de la web del quincho" loading="lazy" width="1400" height="875">
+            <figcaption>La portada que ve el cliente</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="img/proyecto-reserva.webp" alt="Calendario de reservas" loading="lazy" width="1200" height="625">
+            <figcaption>Calendario de reservas paso a paso</figcaption>
+          </figure>
+          <ul class="checks">
+            <li>Botón Reservar con calendario de fechas y turnos</li>
+            <li>Formulario que guarda los datos del cliente</li>
+            <li>Panel privado para ver y administrar las reservas</li>
+            <li>Funciona perfecto en el celular</li>
+          </ul>
+        </div>
+        <a class="btn btn-lg" id="ejemplo" href="#" target="_blank" rel="noopener">Ver el proyecto funcionando ↗</a>
+      </div>
+    </section>
+
+    <!-- Cómo funciona -->
+    <section class="l-sec">
+      <div class="wrap">
+        <p class="kicker">Cómo funciona</p>
+        <h2 class="l-h2">Mira la clase, hazlo tú, avanza</h2>
+        <ol class="steps3">
+          <li><b>1</b><h3>Ves el video</h3><p>Clases cortas donde hago cada paso en pantalla, sin saltarme nada.</p></li>
+          <li><b>2</b><h3>Lo haces en tu proyecto</h3><p>Cada clase te deja una lista de pasos para aplicarlo a tu propio negocio.</p></li>
+          <li><b>3</b><h3>Marcas tu avance</h3><p>Palomeas cada clase vista y ves cuánto te falta para tener tu web lista.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Temario -->
+    <section class="l-sec l-soft" id="temario">
+      <div class="wrap">
+        <p class="kicker">Temario</p>
+        <h2 class="l-h2">8 módulos, de cero a tu web funcionando</h2>
+        <div id="modulos" class="modulos-grid"></div>
+      </div>
+    </section>
+
+    <!-- Para quién -->
+    <section class="l-sec">
+      <div class="wrap two">
+        <div>
+          <p class="kicker">¿Es para mí?</p>
+          <h2 class="l-h2">Sí, si eres…</h2>
+          <ul class="checks dark">
+            <li>Emprendedor o dueño de un negocio que quiere su propia página</li>
+            <li>Alguien que quiere aprender a usar la IA de verdad, no solo chatear</li>
+            <li>Quien busca un ingreso extra haciendo páginas para otros negocios</li>
+            <li>Principiante total: no necesitas saber programar</li>
+          </ul>
+        </div>
+        <div class="need">
+          <h3>Lo único que necesitas</h3>
+          <p>💻 Una computadora con internet</p>
+          <p>📧 Un correo electrónico para abrir tus cuentas gratis</p>
+          <p>⏱️ Unas 12 horas en total, a tu ritmo</p>
+          <p class="muted">No pagas ninguna herramienta para terminar el curso.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas -->
+    <section class="l-sec l-soft" id="preguntas">
+      <div class="wrap narrow">
+        <p class="kicker center">Preguntas frecuentes</p>
+        <h2 class="l-h2 center">Lo que todos preguntan</h2>
+        <details><summary>¿De verdad no necesito saber programar?</summary><p>No. La IA escribe el código; tú aprendes a pedirle lo que quieres, a revisar lo que hizo y a publicarlo. Te explico cada paso con palabras sencillas.</p></details>
+        <details><summary>¿Cuánto cuestan las herramientas?</summary><p>Nada. DeepSeek, OpenCode, GitHub, Vercel y Supabase tienen planes gratis que alcanzan para todo el curso y para tus primeros proyectos.</p></details>
+        <details><summary>¿Sirve para cualquier tipo de negocio?</summary><p>Sí. Usamos un negocio de reservas como ejemplo, pero lo mismo sirve para un consultorio, un salón de eventos, clases, una tienda o un restaurante.</p></details>
+        <details><summary>¿Necesito una computadora potente?</summary><p>No. Todo funciona en el navegador y en servicios en la nube. Cualquier computadora con internet sirve.</p></details>
+        <details><summary>¿Cada cuándo salen clases nuevas?</summary><p>Voy subiendo las clases conforme las grabo. Las que dicen "Próximamente" ya están planeadas y las verás aquí y en YouTube.</p></details>
+      </div>
+    </section>
+
+    <!-- Cierre -->
+    <section class="l-cta">
+      <div class="glow g1"></div>
+      <div class="wrap center">
+        <h2 class="l-h2">Tu negocio merece su propia página web</h2>
+        <p class="l-sub">Empieza hoy con la primera clase. Es gratis.</p>
+        <div class="btns center">
+          <a class="btn btn-lg" id="empezar2" href="#temario">Ver la primera clase</a>
+          <a class="btn btn-lg ghost-light" id="whatsapp" href="#" target="_blank" rel="noopener" hidden>Escríbeme por WhatsApp</a>
+        </div>
+      </div>
     </section>
   </main>
 

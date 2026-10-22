@@ -44,21 +44,29 @@ function pintarPie(curso) {
 async function portada() {
   const datos = await cargarDatos();
   const { curso } = datos;
-  document.getElementById("titulo").textContent = curso.titulo;
   document.getElementById("promesa").textContent = curso.promesa;
   document.title = curso.titulo;
+  if (curso.marca) document.getElementById("marca").textContent = curso.marca;
   const ejemplo = document.getElementById("ejemplo");
   if (curso.proyecto_ejemplo) ejemplo.href = curso.proyecto_ejemplo; else ejemplo.remove();
+  const whatsapp = document.getElementById("whatsapp");
+  if (whatsapp && curso.contacto_whatsapp) {
+    whatsapp.href = `https://wa.me/${encodeURIComponent(curso.contacto_whatsapp)}`;
+    whatsapp.hidden = false;
+  }
 
   const vistasSet = new Set(vistas());
   const clases = todasLasClases(datos);
   const publicadas = clases.filter(c => idDeYoutube(c.youtube));
   const primera = publicadas.find(c => !vistasSet.has(c.id)) || publicadas[0] || clases[0];
-  document.getElementById("empezar").href = `clase.html?id=${encodeURIComponent(primera.id)}`;
+  for (const id of ["empezar", "empezar2"]) {
+    const boton = document.getElementById(id);
+    if (boton) boton.href = `clase.html?id=${encodeURIComponent(primera.id)}`;
+  }
 
   const nVistas = clases.filter(c => vistasSet.has(c.id)).length;
   document.getElementById("progreso-texto").textContent =
-    `${publicadas.length} de ${clases.length} clases publicadas · ${nVistas} vistas por vos`;
+    `${publicadas.length} de ${clases.length} clases publicadas · ${nVistas} vistas por ti`;
   document.getElementById("progreso-barra").style.width = `${Math.round((nVistas / clases.length) * 100)}%`;
 
   document.getElementById("modulos").innerHTML = datos.modulos.map(m => `
@@ -91,6 +99,7 @@ async function paginaClase() {
   const i = Math.max(0, clases.findIndex(c => c.id === id));
   const c = clases[i];
   document.title = `${c.titulo} · ${datos.curso.titulo}`;
+  if (datos.curso.marca) document.getElementById("marca").textContent = datos.curso.marca;
 
   document.getElementById("migas").innerHTML =
     `<a href="./">Inicio</a> › Módulo ${c.modulo.numero}: ${esc(c.modulo.titulo)}`;
@@ -120,5 +129,5 @@ async function paginaClase() {
 (document.body.dataset.pagina === "clase" ? paginaClase : portada)().catch(err => {
   console.error(err);
   document.querySelector("main").insertAdjacentHTML("afterbegin",
-    `<p class="wrap">No se pudieron cargar las clases. Revisá que clases.json no tenga errores (una coma de más o una comilla sin cerrar).</p>`);
+    `<p class="wrap">No se pudieron cargar las clases. Revisa que clases.json no tenga errores (una coma de más o una comilla sin cerrar).</p>`);
 });
