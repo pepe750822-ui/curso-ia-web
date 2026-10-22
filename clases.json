@@ -26,14 +26,14 @@
         },
         {
           "id": "1-2",
-          "titulo": "Charlar el flujo con Claude",
-          "resumen": "Le contamos a Claude cómo funciona el negocio y armamos juntos el recorrido del cliente: botón Reservar, calendario, formulario, confirmación y pago.",
+          "titulo": "Charlar el flujo con DeepSeek",
+          "resumen": "Le contamos a la IA cómo funciona el negocio y armamos juntos el recorrido del cliente: botón Reservar, calendario, formulario, confirmación y pago. Usamos DeepSeek, que es gratis desde el navegador.",
           "youtube": "",
           "duracion": "",
           "pasos": [
-            "Crear tu cuenta en claude.ai",
+            "Crear tu cuenta gratis en chat.deepseek.com",
             "Describir tu negocio en un mensaje",
-            "Pedirle a Claude el flujo en una página"
+            "Pedirle a la IA el flujo en una página"
           ]
         }
       ]
@@ -46,12 +46,12 @@
         {
           "id": "2-1",
           "titulo": "Pedir la primera página",
-          "resumen": "Con el flujo listo, le pedimos a Claude la página principal y la vemos funcionando en una vista previa, sin instalar nada.",
+          "resumen": "Con el flujo listo, le pedimos a DeepSeek la página principal y la abrimos en el navegador para verla funcionando.",
           "youtube": "",
           "duracion": "",
           "pasos": [
             "Pegar el flujo y pedir la landing",
-            "Abrir la vista previa y navegarla"
+            "Guardar el código como index.html y abrirlo en el navegador"
           ]
         },
         {
@@ -69,17 +69,18 @@
     },
     {
       "numero": 3,
-      "titulo": "Claude Code",
+      "titulo": "OpenCode: la IA trabajando en tus archivos",
       "entregable": "Prototipo con tus textos y fotos",
       "clases": [
         {
           "id": "3-1",
-          "titulo": "Qué es Claude Code y cómo se usa",
-          "resumen": "La diferencia entre charlar con Claude y que Claude trabaje sobre los archivos de tu proyecto.",
+          "titulo": "Instalar OpenCode y conectarlo a la IA",
+          "resumen": "OpenCode es un programa gratuito que deja que la IA lea y cambie los archivos de tu proyecto. Lo instalamos y lo conectamos a DeepSeek o a un modelo gratis.",
           "youtube": "",
           "duracion": "",
           "pasos": [
-            "Abrir Claude Code",
+            "Instalar OpenCode",
+            "Conectarlo a DeepSeek o a un modelo gratis",
             "Pedirle que te explique los archivos del proyecto"
           ]
         },
