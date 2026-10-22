@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-pagina="clase">
+  <div class="top">
+    <div class="wrap">
+      <a class="logo" href="./">Curso IA</a>
+      <nav><a href="./#modulos">Todas las clases</a></nav>
+    </div>
+  </div>
+
+  <main class="clase">
+    <div class="wrap">
+      <div class="migas" id="migas"></div>
+      <h1 id="titulo"></h1>
+      <div class="video" id="video"></div>
+
+      <div class="cuerpo">
+        <div>
+          <h2>De qué se trata</h2>
+          <p id="resumen"></p>
+          <label><input type="checkbox" id="vista"> Ya vi esta clase</label>
+        </div>
+        <div class="caja">
+          <h2>Lo que hacés en esta clase</h2>
+          <ol class="pasos" id="pasos"></ol>
+        </div>
+      </div>
+
+      <div class="nav-clases" id="nav-clases"></div>
+    </div>
+  </main>
+
+  <footer><div class="wrap" id="pie"></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

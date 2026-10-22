@@ -1,0 +1,245 @@
+{
+  "curso": {
+    "titulo": "De la idea a tu web con IA",
+    "promesa": "De cero a tu web con reservas y base de datos, publicada y funcionando, usando IA. Sin saber programar.",
+    "autor": "José",
+    "youtube_canal": "",
+    "contacto_whatsapp": "",
+    "proyecto_ejemplo": "https://quincho-sierras.vercel.app"
+  },
+  "modulos": [
+    {
+      "numero": 1,
+      "titulo": "Pensar el proyecto con IA",
+      "entregable": "Flujo escrito en una página",
+      "clases": [
+        {
+          "id": "1-1",
+          "titulo": "Qué vamos a construir y por qué",
+          "resumen": "Te muestro la web del quincho terminada y la desarmamos en partes: página, reserva, base de datos, panel. Así sabés a dónde vamos antes de empezar.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Mirar la web de ejemplo funcionando",
+            "Elegir el negocio para el que vas a hacer tu web"
+          ]
+        },
+        {
+          "id": "1-2",
+          "titulo": "Charlar el flujo con Claude",
+          "resumen": "Le contamos a Claude cómo funciona el negocio y armamos juntos el recorrido del cliente: botón Reservar, calendario, formulario, confirmación y pago.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Crear tu cuenta en claude.ai",
+            "Describir tu negocio en un mensaje",
+            "Pedirle a Claude el flujo en una página"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "titulo": "Primer prototipo",
+      "entregable": "Prototipo navegable",
+      "clases": [
+        {
+          "id": "2-1",
+          "titulo": "Pedir la primera página",
+          "resumen": "Con el flujo listo, le pedimos a Claude la página principal y la vemos funcionando en una vista previa, sin instalar nada.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Pegar el flujo y pedir la landing",
+            "Abrir la vista previa y navegarla"
+          ]
+        },
+        {
+          "id": "2-2",
+          "titulo": "Iterar: pedir cambios con claridad",
+          "resumen": "Cómo pedir cambios para que la IA entienda a la primera: colores, textos, orden de las secciones.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Pedir tres cambios concretos",
+            "Comparar el antes y el después"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "titulo": "Claude Code",
+      "entregable": "Prototipo con tus textos y fotos",
+      "clases": [
+        {
+          "id": "3-1",
+          "titulo": "Qué es Claude Code y cómo se usa",
+          "resumen": "La diferencia entre charlar con Claude y que Claude trabaje sobre los archivos de tu proyecto.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Abrir Claude Code",
+            "Pedirle que te explique los archivos del proyecto"
+          ]
+        },
+        {
+          "id": "3-2",
+          "titulo": "Revisar lo que hizo la IA",
+          "resumen": "La IA se equivoca. Aprendemos a mirar qué cambió, probarlo y pedir una corrección.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Cambiar textos y fotos por los tuyos",
+            "Encontrar un error y pedir que lo corrija"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "titulo": "GitHub",
+      "entregable": "Repositorio con tu proyecto",
+      "clases": [
+        {
+          "id": "4-1",
+          "titulo": "Cuenta y primer repositorio",
+          "resumen": "GitHub es donde vive tu código, con historial de cada cambio. Creamos la cuenta y un repositorio vacío.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Crear cuenta en github.com",
+            "Crear un repositorio vacío"
+          ]
+        },
+        {
+          "id": "4-2",
+          "titulo": "Subir el código y entender un commit",
+          "resumen": "Un commit es una foto del proyecto con una nota de qué cambió. Subimos el proyecto y vemos el historial.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Subir los archivos al repositorio",
+            "Hacer un cambio y ver el commit nuevo"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "titulo": "Vercel",
+      "entregable": "Tu web en .vercel.app",
+      "clases": [
+        {
+          "id": "5-1",
+          "titulo": "Publicar en internet",
+          "resumen": "Importamos el repositorio en Vercel y en un minuto la web tiene dirección propia.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Crear cuenta en vercel.com con GitHub",
+            "Importar el repositorio y publicar"
+          ]
+        },
+        {
+          "id": "5-2",
+          "titulo": "Cada cambio se publica solo",
+          "resumen": "Cambiamos algo en GitHub y vemos cómo Vercel lo publica sin tocar nada más.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Editar un texto en GitHub",
+            "Ver el nuevo deploy en Vercel"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "titulo": "Supabase",
+      "entregable": "Base con tus turnos y precios",
+      "clases": [
+        {
+          "id": "6-1",
+          "titulo": "Qué es una base de datos",
+          "resumen": "Las reservas tienen que guardarse en algún lado. Creamos el proyecto en Supabase y miramos las tablas como si fueran una planilla.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Crear cuenta y proyecto en supabase.com",
+            "Crear las tablas con el archivo SQL"
+          ]
+        },
+        {
+          "id": "6-2",
+          "titulo": "Claves públicas y secretas",
+          "resumen": "Por qué la clave secreta nunca va en la página y dónde se guarda.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Ubicar la URL y las claves del proyecto",
+            "Cargar tus turnos y precios"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "titulo": "Conectar todo",
+      "entregable": "Reserva de prueba guardada",
+      "clases": [
+        {
+          "id": "7-1",
+          "titulo": "Variables de entorno en Vercel",
+          "resumen": "Le pasamos a Vercel las claves de Supabase sin que queden en el código.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Cargar las variables en Vercel",
+            "Volver a publicar"
+          ]
+        },
+        {
+          "id": "7-2",
+          "titulo": "Primera reserva real y el panel",
+          "resumen": "Hacemos una reserva desde la web y la vemos aparecer en la base y en el panel de administración.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Hacer una reserva de prueba",
+            "Verla en Supabase y en /admin"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "titulo": "Cobros, emails y entrega",
+      "entregable": "Sistema listo para usar",
+      "clases": [
+        {
+          "id": "8-1",
+          "titulo": "Mercado Pago y emails",
+          "resumen": "Conectamos el cobro y el email de confirmación para que el cliente reciba todo solo.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Crear credenciales de Mercado Pago",
+            "Configurar Resend para los emails"
+          ]
+        },
+        {
+          "id": "8-2",
+          "titulo": "Entregar el sistema a un cliente",
+          "resumen": "Qué cuentas tienen que quedar a nombre del cliente, qué dejar por escrito y cómo cobrar el mantenimiento.",
+          "youtube": "",
+          "duracion": "",
+          "pasos": [
+            "Pasar las cuentas al cliente",
+            "Armar la guía de uso del panel"
+          ]
+        }
+      ]
+    }
+  ]
+}
