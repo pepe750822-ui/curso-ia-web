@@ -31,8 +31,8 @@
           "id": "1-2",
           "titulo": "Charlar el flujo con DeepSeek",
           "resumen": "Le contamos a la IA cómo funciona el negocio y armamos juntos el recorrido del cliente: botón Reservar, calendario, formulario, confirmación y pago. Usamos DeepSeek, que es gratis desde el navegador.",
-          "youtube": "",
-          "duracion": "",
+          "youtube": "https://youtu.be/sT475AdHdMk",
+          "duracion": "18:25",
           "material": "material/clase-1-2.pdf",
           "pasos": [
             "Crear tu cuenta gratis en chat.deepseek.com",
