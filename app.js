@@ -37,8 +37,14 @@ function pintarPie(curso) {
   if (!pie) return;
   const partes = [`© ${new Date().getFullYear()} ${esc(curso.autor)}`];
   if (curso.youtube_canal) partes.push(`<a href="${esc(curso.youtube_canal)}" target="_blank" rel="noopener">Canal de YouTube</a>`);
-  if (curso.contacto_whatsapp) partes.push(`<a href="https://wa.me/${esc(curso.contacto_whatsapp)}" target="_blank" rel="noopener">WhatsApp</a>`);
+  if (curso.grupo_whatsapp) partes.push(`<a href="${esc(curso.grupo_whatsapp)}" target="_blank" rel="noopener">Grupo de WhatsApp</a>`);
+  else if (curso.contacto_whatsapp) partes.push(`<a href="https://wa.me/${esc(curso.contacto_whatsapp)}" target="_blank" rel="noopener">WhatsApp</a>`);
   pie.innerHTML = partes.join(" · ");
+
+  // Botones "Únete al grupo" (portada y clases)
+  if (curso.grupo_whatsapp) {
+    document.querySelectorAll(".grupo-wa").forEach(a => { a.href = curso.grupo_whatsapp; a.hidden = false; });
+  }
 }
 
 async function portada() {
@@ -50,7 +56,11 @@ async function portada() {
   const ejemplo = document.getElementById("ejemplo");
   if (curso.proyecto_ejemplo) ejemplo.href = curso.proyecto_ejemplo; else ejemplo.remove();
   const whatsapp = document.getElementById("whatsapp");
-  if (whatsapp && curso.contacto_whatsapp) {
+  if (whatsapp && curso.grupo_whatsapp) {
+    whatsapp.href = curso.grupo_whatsapp;
+    whatsapp.textContent = "Únete al grupo de WhatsApp";
+    whatsapp.hidden = false;
+  } else if (whatsapp && curso.contacto_whatsapp) {
     whatsapp.href = `https://wa.me/${encodeURIComponent(curso.contacto_whatsapp)}`;
     whatsapp.hidden = false;
   }

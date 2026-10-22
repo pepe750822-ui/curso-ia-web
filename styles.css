@@ -275,3 +275,9 @@ details p { margin: 0 0 16px; color: var(--muted); }
 .landing footer a { color: #ff6fb5; }
 [hidden] { display: none !important; }
 .modulos-grid .modulo h2 { flex: 1; min-width: 0; }
+
+/* Botón del grupo de WhatsApp */
+.grupo-wa { display: flex; align-items: center; gap: 10px; margin-top: 24px; padding: 14px 18px; border-radius: 12px; background: #25D366; color: #06331A; text-decoration: none; font-size: 1rem; line-height: 1.35; max-width: 560px; transition: transform .15s, filter .15s; }
+.grupo-wa:hover { filter: brightness(1.05); transform: translateY(-1px); }
+.grupo-wa b { font-weight: 600; }
+.l-hero .grupo-wa { margin: 18px 0 0; font-size: .95rem; }
