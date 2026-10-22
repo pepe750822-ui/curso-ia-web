@@ -51,8 +51,8 @@
           "id": "2-1",
           "titulo": "Pedir la primera página",
           "resumen": "Con el flujo listo, le pedimos a DeepSeek la página principal y la abrimos en el navegador para verla funcionando.",
-          "youtube": "",
-          "duracion": "",
+          "youtube": "https://youtu.be/ua738nWOu-Y",
+          "duracion": "11:03",
           "material": "material/clase-2-1.pdf",
           "pasos": [
             "Pegar el flujo y pedir la landing",
